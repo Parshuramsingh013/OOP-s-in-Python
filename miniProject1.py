@@ -1,10 +1,14 @@
+    ## Random Number guessing game
+
 import random
 
 target = random.randint(1,100)
 
 while True:
-    userChoice = int(input("Gauss The Target : "))
-
+    userChoice = input("Gauss The Target or Quit(Q): ")
+    if (userChoice == "Q"):
+        break
+    userChoice = int(userChoice)
     if (userChoice == target):
         print("Success : Target Achieved !!")
         break
