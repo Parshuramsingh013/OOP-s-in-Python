@@ -10,6 +10,7 @@ class Student:
             sum += val
         print("hi",self.name,"your avg marks is:", sum//3)
 
+
     @staticmethod
     def hello():
         print("hello")
